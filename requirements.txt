@@ -1,0 +1,12 @@
+# Dependencies used by the six dissertation notebooks
+numpy
+pandas
+scikit-learn
+xgboost
+shap
+matplotlib
+
+# Jupyter notebook environment
+jupyter
+ipykernel
+ipython
