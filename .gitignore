@@ -179,3 +179,21 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+
+# ==========================================
+# Tennis Match Prediction Dissertation
+# ==========================================
+
+# Raw and processed tennis datasets
+data/
+
+# Generated figures, results and model outputs
+outputs/
+
+# Saved machine learning models
+*.pkl
+*.pickle
+*.joblib
+
+# macOS system files
+.DS_Store
