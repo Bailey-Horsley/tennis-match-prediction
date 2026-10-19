@@ -188,8 +188,9 @@ cython_debug/
 data/
 
 # Generated figures, results and model outputs
-outputs/
-
+# Ignore generated outputs except portfolio figures
+outputs/*
+!outputs/figures/
 # Saved machine learning models
 *.pkl
 *.pickle

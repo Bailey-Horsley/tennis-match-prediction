@@ -89,6 +89,45 @@ Performance was evaluated using:
 These findings highlight the value of combining predictive
 performance with interpretability.
 
+## Results and Visualisations
+
+### Model Performance
+
+Six model configurations were evaluated using rolling-origin
+validation to preserve the temporal structure of the data.
+
+The results show that more complex models did not consistently
+outperform simpler approaches.
+
+![Model Accuracy Comparison](outputs/figures/model_accuracy_comparison.png)
+
+![Model Log Loss Comparison](outputs/figures/model_logloss_comparison.png)
+
+### Global Model Interpretability
+
+SHAP analysis was used to identify the features that most
+strongly influenced XGBoost predictions.
+
+Ranking differences, Elo differences and surface-specific
+Elo differences emerged as important predictors.
+
+![XGBoost Global SHAP Importance](outputs/figures/xgb_global_shap_top15.png)
+
+### Tennis-Specific Feature Importance
+
+To investigate factors beyond ranking and Elo ratings,
+I also examined the contribution of tennis-specific features.
+
+![XGBoost Tennis-Specific Features](outputs/figures/xgb_filtered_features.png)
+
+### Explaining Individual Predictions
+
+SHAP waterfall plots were used to explain individual
+match predictions, showing how different features
+increased or decreased the model's output.
+
+![Individual Prediction SHAP Explanation](outputs/figures/sinner_waterfall.png)
+
 ## Repository Structure
 
 ```text
